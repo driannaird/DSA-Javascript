@@ -6,27 +6,6 @@ const obj = {
     console.log(this.name);
   },
 };
-obj.hobby = "football";
-
-delete obj.hobby;
-
-console.log(obj.name);
-console.log(obj["age"]);
-console.log(obj["key-tree"]);
-console.log(obj);
-obj.sayMyName();
-
-// Object.keys() .values() .entries()
-const person = { name: "Ali", age: 25, city: "Jakarta" };
-const keys = Object.keys(person);
-const values = Object.values(person);
-const entries = Object.entries(person);
-
-console.log(Object.values(person).find((value) => value === "Ali"));
-
-console.log(keys); // Output: ["name", "age", "city"]
-console.log(values); // Output: ["Ali", 25, "Jakarta"]
-console.log(entries); // Output: [["name", "Ali"], ["age", 25], ["city", "Jakarta"]]
 
 /**
  * Object - Big-O time complexity
@@ -37,3 +16,37 @@ console.log(entries); // Output: [["name", "Ali"], ["age", 25], ["city", "Jakart
  * - Object.values() - O(n)
  * - Object.entries() - O(n)
  **/
+
+obj.hobby = "football"; // Insert - O(1)
+// Output:
+// {
+//   name: 'Erlangga',
+//   age: 25,
+//   'key-tree': true,
+//   sayMyName: [Function: sayMyName],
+//   hobby: 'football'
+// }
+
+obj.sayMyName(); // Access - O(1)
+// Output: "Erlangga"
+console.log(obj.name); // Access - O(1)
+// Output: "Erlangga"
+console.log(obj["key-tree"]); // Access - O(1)
+// Output: true
+
+const searchObj = obj.hasOwnProperty("age"); // Search - O(n)
+// Output: true
+
+// Object.keys() .values() .entries() - O(n)
+const person = { name: "Ali", age: 25, city: "Jakarta" };
+
+console.log(Object.values(person).find((value) => value === "Ali")); // Search - O(n)
+// Output: "Ali"
+const keys = Object.keys(person); // Object.keys() - O(n)
+// Output: ["name", "age", "city"]
+const values = Object.values(person); // Object.values() - O(n)
+// Output: ["Ali", 25, "Jakarta"]
+const entries = Object.entries(person); // Object.entries() - O(n)
+// Output: [["name", "Ali"], ["age", 25], ["city", "Jakarta"]]
+
+console.log("?");
