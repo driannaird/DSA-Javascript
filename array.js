@@ -10,36 +10,48 @@ const arr = [1, 2, 3, "Vishmas"];
  * - for / map / filter / reduce - O(n)
  **/
 
-arr.push(4); // Insert from end - O(1)
+console.log(arr);
+
+// Insert from end - O(1)
+arr.push(4);
 // Output: [1, 2, 3, "Vishmas", 4]
 
-arr.pop(); // Remove from end - O(1)
+// Remove from end - O(1)
+arr.pop();
 // Output: [1, 2, 3, "Vishmas"]
 
-arr.unshift(0); // Insert from beginning - O(n)
+// Insert from beginning - O(n)
+arr.unshift(0);
 // Output: [0, 1, 2, 3, "Vishmas"]
 
-arr.shift(); // Remove from begining - O(n)
+// Remove from begining - O(n)
+arr.shift();
 // Output: [1, 2, 3, "Vishmas"]
 
-const arrAccess = arr[2]; // Access - O(1)
+// Access - O(1)
+const arrAccess = arr[2];
 // Output: 3
 
-const arrFind = arr.find((item) => item === "Vishmas"); // Search - O(n)
+// Search - O(n)
+const arrFind = arr.find((item) => item === "Vishmas");
 // Output: "Vishmas"
 
-const arrConcat = arr.concat([6, 3]); // Concat - O(n)
+// Concat - O(n)
+const arrConcat = arr.concat([6, 3]);
 // Output: [1, 2, 3, "Vishmas", 6, 3]
 
-const arrSlice = arr.slice(1, 3); // Slice - O(n)
+// Slice - O(n)
+const arrSlice = arr.slice(1, 3);
 // Output: [2, 3]
 
-arr.splice(2, 1, "Banana", "Lemon"); // Splice - O(n)
+// Splice - O(n)
+arr.splice(2, 1, "Banana", "Lemon");
 // Output: [1, 2, "Banana", "Lemon", "Vishmas"]
 
+// For Of - O(n)
 for (const item of arr) {
   console.log(item);
-} // For Of - O(n)
+}
 // Output:
 // 1
 // 2
@@ -47,7 +59,8 @@ for (const item of arr) {
 // Lemon
 // Vishmas
 
-arr.map((item) => console.log(item)); // Map - O(n)
+// Map - O(n)
+arr.map((item) => console.log(item));
 // Output:
 // 1
 // 2
@@ -55,13 +68,15 @@ arr.map((item) => console.log(item)); // Map - O(n)
 // Lemon
 // Vishmas
 
-const arrFilter = arr.filter((item) => typeof item === "number"); // Filter - O(n)
+// Filter - O(n)
+const arrFilter = arr.filter((item) => typeof item === "number");
 // Output: [1, 2]
 
+// Reduce - O(n)
 const arrReduceSum = arrFilter.reduce(
   (accumulator, currentArr) => accumulator + currentArr,
   0
-); // Reduce - O(n)
+);
 // Output: 3
 
 console.log("?");

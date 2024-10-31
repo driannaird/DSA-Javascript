@@ -9,31 +9,44 @@ const setInstance = new Set([1, 2, 3]);
  * - Clear - O(n)
  **/
 
-setInstance.add(4); // Add - O(1)
+console.log(setInstance);
+
+// Add - O(1)
+setInstance.add(4);
 // Output: Set(4) { 1, 2, 3, 4 }
 
-setInstance.delete(2); // Delete - O(1)
+// Delete - O(1)
+setInstance.delete(2);
 // Output: Set(3) { 1, 3, 4 }
 
-console.log(setInstance.has(4)); // Has - O(1)
+// Has - O(1)
+console.log(setInstance.has(4));
 // Output: true
 
-console.log(setInstance.size); // Size - O(1)
+// Size - O(1)
+console.log(setInstance.size);
 // Output: 3
 
+// for - O(n)
 for (const item of setInstance) {
   console.log(item);
-} // for - O(n)
+}
 // Output: 1, 3, 4
 
 // Mengonversi set menjadi array untuk akses elemen dengan indeks
-const arrayFromSet = Array.from(setInstance); // O(n)
-console.log(arrayFromSet[0]); // O(1)
+
+// O(n)
+const arrayFromSet = Array.from(setInstance);
+// O(1)
+console.log(arrayFromSet[0]);
 // Output: 1
-console.log(arrayFromSet[1]); // O(1)
+
+// O(1)
+console.log(arrayFromSet[1]);
 // Output: 3
 
-setInstance.clear(); // Clear - O(n)
+// Clear - O(n)
+setInstance.clear();
 // Set(0) {}
 
 console.log("?");

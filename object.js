@@ -17,7 +17,10 @@ const obj = {
  * - Object.entries() - O(n)
  **/
 
-obj.hobby = "football"; // Insert - O(1)
+console.log(obj);
+
+// Insert - O(1)
+obj.hobby = "football";
 // Output:
 // {
 //   name: 'Erlangga',
@@ -27,26 +30,35 @@ obj.hobby = "football"; // Insert - O(1)
 //   hobby: 'football'
 // }
 
-obj.sayMyName(); // Access - O(1)
+// Access - O(1)
+obj.sayMyName();
 // Output: "Erlangga"
-console.log(obj.name); // Access - O(1)
+console.log(obj.name);
 // Output: "Erlangga"
-console.log(obj["key-tree"]); // Access - O(1)
+console.log(obj["key-tree"]);
 // Output: true
 
-const searchObj = obj.hasOwnProperty("age"); // Search - O(n)
+// Search - O(n)
+const searchObj = obj.hasOwnProperty("age");
 // Output: true
 
 // Object.keys() .values() .entries() - O(n)
 const person = { name: "Ali", age: 25, city: "Jakarta" };
 
-console.log(Object.values(person).find((value) => value === "Ali")); // Search - O(n)
+// Search - O(n)
+console.log(Object.values(person).find((value) => value === "Ali"));
 // Output: "Ali"
-const keys = Object.keys(person); // Object.keys() - O(n)
+
+// Object.keys() - O(n)
+const keys = Object.keys(person);
 // Output: ["name", "age", "city"]
-const values = Object.values(person); // Object.values() - O(n)
+
+// Object.values() - O(n)
+const values = Object.values(person);
 // Output: ["Ali", 25, "Jakarta"]
-const entries = Object.entries(person); // Object.entries() - O(n)
+
+// Object.entries() - O(n)
+const entries = Object.entries(person);
 // Output: [["name", "Ali"], ["age", 25], ["city", "Jakarta"]]
 
 console.log("?");
