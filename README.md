@@ -35,4 +35,4 @@ To get started with this repository, follow these steps:
    ```bash
    git clone https://github.com/driannaird/DSA-Javascript.git
    ```
-2. onLick the code 😁
+2. enjoy onLick the code 😁
