@@ -10,6 +10,7 @@ Welcome to the **Data Structures and Algorithms (DSA) in JavaScript** repository
   - [Array](https://github.com/driannaird/DSA-Javascript/blob/main/array.js)
   - [Object](https://github.com/driannaird/DSA-Javascript/blob/main/object.js)
   - [Set](https://github.com/driannaird/DSA-Javascript/blob/main/set.js)
+  - [Map](https://github.com/driannaird/DSA-Javascript/blob/main/map.js)
   - [Linked List](#linked-list)
   - [Stack](#stack)
   - [Queue](#queue)
